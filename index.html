@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 7 - Validación de Formularios con JavaScript</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <h1>Laboratorio 7 - Validación de Formularios con JavaScript</h1>
+    <p>Bienvenido al laboratorio 7 del curso de Desarrollo de Aplicaciones Web. En este laboratorio, implementarás validación de formularios usando JavaScript para mejorar la experiencia del usuario en el registro bancario del Banco PUCETEC.</p>
+    <h2>Nombre del estudiante: [Tu Nombre Aquí]</h2>
+    
+    <form action="/registro" method="post">
+        <!-- Campo Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <!-- Campos Apellidos -->
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input type="text" id="apellidoPaterno" name="apellidoPaterno" required>
+        <br><br>
+
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input type="text" id="apellidoMaterno" name="apellidoMaterno" required>
+        <br><br>
+
+        <!-- Campo Cédula -->
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required>
+        <br><br>
+
+        <!-- Campo Motivo -->
+        <label for="motivo">Motivo de apertura:</label>
+        <textarea id="motivo" name="motivo" required></textarea>
+        <br><br>
+
+        <!-- Campo Tipo de cuenta -->
+        <label for="tipoCuenta">Tipo de cuenta:</label>
+        <select id="tipoCuenta" name="tipoCuenta" required>
+            <option value="">Seleccione una opción</option>
+            <option value="ahorros">Ahorros</option>
+            <option value="corriente">Corriente</option>
+        </select>
+        <br><br>
+
+        <!-- Campos de Dirección -->
+        <fieldset>
+            <legend>Dirección de domicilio</legend>
+            
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required>
+            <br><br>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required>
+            <br><br>
+
+            <label for="interseccion">Intersección:</label>
+            <input type="text" id="interseccion" name="interseccion" required>
+            <br><br>
+        </fieldset>
+
+        <!-- Campo Foto -->
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+        <br><br>
+
+        <!-- Botón Confirmar -->
+        <button type="submit">Confirmar</button>
+    </form>
+
+    <!-- Conectar el archivo JavaScript -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "lab7-javascript-form-validation",
+  "version": "1.0.0",
+  "description": "Laboratorio 7 - Validación de formularios y manipulación del DOM con JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": ["html", "css", "javascript", "forms", "validation", "dom", "lab"],
+  "author": "",
+  "license": "MIT"
+}
